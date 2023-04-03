@@ -1,0 +1,251 @@
+.s-hero-about {
+    &.cartao-presente {
+        padding-bottom: 0;
+        &::before {
+            height: 100%;
+        }
+        .container {
+            gap: 8rem;
+            .informacoes {
+                max-width: 42.5rem;
+                p {
+                    max-width: 46.5rem;
+                }   
+            }
+        }
+    }
+    @include responsive(991px) {
+        &.cartao-presente {
+            padding-bottom: 21px;
+        }
+    }
+    @include responsive(768px) {
+        &.cartao-presente {
+            .container {
+                .informacoes {
+                    p {
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(560px) {
+        &.cartao-presente {
+            .container {
+                gap: 0;
+            }
+        }
+    }
+}
+
+.s-surpreenda-alguem {
+    margin-top: -4rem;
+    padding: 8rem 0;
+    background-color: var(--bege);
+    position: relative;
+    z-index: 99;
+    .container {
+        @include flex(row, center, space-between);
+        .left-container {
+            width: 100%;
+            max-width: 49.6rem;
+            h2 {
+                width: 100%;
+                max-width: 42.1rem;
+                color: var(--green-dark-100);
+                margin-bottom: 2.4rem;
+            }
+            p {
+                font-size: 1.8rem;
+                margin-bottom: 2.4rem;
+            }
+        }
+        .images {
+            width: 100%;
+            max-width: 44.5rem;
+            height: 40.8rem;
+            position: relative;
+            img {
+                position: absolute;
+                &.one {
+                    top: 0;
+                    left: 0;
+                    z-index: 5;
+                    animation: floating 6s infinite;
+                    &:hover {
+                        transform: scale(1.01);
+                    }
+                }
+                &.two {
+                    top: 1.3rem;
+                    left: 3.4rem;
+                    z-index: 3;
+                    &:hover {
+                        transform: scale(1.01);
+                    }
+                }
+                &.three {
+                    top: 6rem;
+                    right: 0;
+                    z-index: 5;
+                    animation: floating 7s infinite;
+                    &:hover {
+                        transform: scale(1.01);
+                    }
+                }
+                &.four {
+                    bottom: 0;
+                    right: 6rem;
+                    z-index: 5;
+                    animation: floating 7s infinite;
+                    &:hover {
+                        transform: scale(1.01);
+                    }
+                }
+                &.five {
+                    left: 0;
+                    bottom: 0;
+                    z-index: 5;
+                    animation: floating 6s infinite;
+                }
+            }
+        }
+    }
+    @include responsive(550px) {
+        padding: 5rem 0;
+        margin-top: -5rem;
+        .container{
+            flex-direction: column;
+            gap: 5rem;
+            .images {
+                img {
+                    &.one {
+                        width: 10rem;
+                        top: 3rem;
+                    }
+                    &.three {
+                        width: 10rem;
+                    }
+                    &.four {
+                        width: 13rem;
+                    }
+                    &.five {
+                        width: 9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.s-sugestao-de-presentes {
+    padding: 8rem 0;
+    background-color: var(--green-light);
+    position: relative;
+    z-index: 4;
+    &::before {
+        content: "";
+        background: url('../assets/bg-mais-serivocs.svg') no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.45;
+    }
+    .container {
+        h2 {
+            text-align: center;
+            color: var(--green-dark-100);
+        }
+        p {
+            font-weight: 400;
+            font-size: 1.8rem;
+            text-align: center;
+            line-height: 32px;
+            color: #000000;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+        .all-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2.4rem;
+            .card {
+                padding: 2rem;
+                background-color: #ffffff;
+                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+                border-radius: 16px;
+                width: 26rem;
+                margin: 0 auto;
+                .image {
+                    height: 24rem;
+                    img {
+                        height: 100%;
+                    }
+                }
+                h3 {
+                    color: var(--green-dark-100);
+                    font-size: 2rem;
+                    margin: 1rem 0;
+                }
+                ul {
+                    li {
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        line-height: 18px;
+                        color: var(--green-dark);
+                    }
+                }
+                strong {
+                    font-family: 'Philosopher';
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    line-height: 22px;
+                    color: #000000;
+
+                    display: block;
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .btn-wp {
+            display: table;
+            margin: 0 auto;
+            margin-top: 4.8rem;
+            @include flex(row, center, center);
+        }
+    }
+    @include responsive(991px) {
+        .container {
+            .all-cards {
+                grid-template-columns: repeat(3, 1fr);
+                .card {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include responsive(550px) {
+        padding: 5rem 0;
+        .container {
+            .all-cards {
+                grid-template-columns: repeat(1, 1fr);
+                .card {
+                    .image {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

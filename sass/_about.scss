@@ -1,0 +1,335 @@
+.s-hero-about {
+    padding-top: 4rem;
+    background-color: #ffffff;
+    position: relative;
+    &::before {
+        content: "";
+        background: url('../assets/before-hero.png') no-repeat center center;
+        width: 38.9rem;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &::after {
+        content: "";
+        background: url('../assets/after-hero.svg') no-repeat center center;
+        width: 18rem;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        .image-hero {
+            @include flex(row, flex-end, flex-end);
+        }
+        .informacoes {
+            width: 100%;
+            max-width: 41.1rem;
+            h1 {
+                color: var(--green-musgo);
+                margin-bottom: 8rem;
+            }
+        }
+    }
+    &.servicos {
+        padding-top: 12rem;
+        padding-bottom: 8rem;
+        .container {
+            .informacoes {
+                h1 {
+                    margin-bottom: 2rem;
+                    line-height: 56px;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 2.4rem;
+                    line-height: 32px;
+                    color: var(--green-musgo);
+                    margin-bottom: 8rem;
+                }
+            }
+        }
+    }
+    @include responsive(768px) {
+        padding-top: 8rem;
+    }
+    @include responsive(560px) {
+        padding-top: 12.3rem;
+        z-index: 3;
+        &::before {
+            display: none;
+        }
+        &::after {
+            z-index: -1;
+        }
+        &.servicos {
+            padding-bottom: 5rem;
+            .container {
+                .informacoes {
+                    margin-bottom: 4rem;
+                    p {
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+        .container {
+            flex-direction: column-reverse;
+            .informacoes {
+                h1 {
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+} 
+
+.s-conheca-a-historia {
+    background-color: var(--bege);
+    padding-top: 10.1rem;
+    margin-top: -8rem;
+
+    position: relative;
+    z-index: 8;
+    .container {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        &:before {
+            content: "";
+            width: 41.1rem;
+            height: 27.8rem;
+            background: url('../assets/before-espaco-spa.png') no-repeat center center;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        &:after {
+            content: "";
+            background: url('../assets/after-espaco-spa.png') no-repeat center center;
+            width: 32.6rem;
+            height: 41.5rem;
+
+            position: absolute;
+            right: -10rem;
+            top: -3rem;
+        }
+        .left {
+            width: 100%;
+            max-width: 41.7rem;
+            height: 63.1rem;
+            position: relative;
+            
+            img {
+                position: absolute;
+                &.flor {
+                    bottom: 4rem;
+                    left: -10.3rem;
+                    transform: rotate(-8.31deg);
+                    animation: floating 5s infinite;
+                }
+            }
+        }
+        .info {
+            width: 100%;
+            max-width: 48.4rem;
+            h2 {
+                width: 100%;
+                max-width: 36.4rem;
+                color: var(--green-dark-100);
+                margin-bottom: 2.4rem;
+            }
+            p {
+                font-weight: 300;
+                font-size: 1.8rem;
+                line-height: 28px;
+                color: #000000;
+
+                margin-bottom: 8rem;
+            }
+        }
+    }
+    @include responsive(1024px) {
+        .container {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+    @include responsive(830px) {
+        .container {
+            .info {
+                max-width: 100%;
+                margin-bottom: 4rem;
+            }
+            .left {
+                display: none;
+            }
+        }
+    }
+    @include responsive(550px) {
+        padding: 5rem 0;
+        .container {
+            .info {
+                margin-bottom: 0;
+                p {
+                    font-size: 1.6rem;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+}
+
+.s-missao {
+    background-color: var(--bege);
+    padding-top: 7rem;
+    padding-bottom: 5.4rem;
+    .container {
+        background-color: var(--green-light);
+        box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        padding: 6.4rem;
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            .card {
+                background-color: #ffffff;
+                border-radius: 16px;
+                width: 100%;
+                max-width: 32rem;
+
+                .info {
+                    padding: 2.4rem;
+                    h3 {
+                        font-weight: 700;
+                        font-size: 3.2rem;
+                        line-height: 48px;
+                        color: var(--green-musgo);
+                        margin-bottom: 1.5rem;
+                    }
+                    p {
+                        font-weight: 300;
+                        font-size: 1.6rem;
+                        line-height: 23px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(1024px) {
+        .container {
+            .cards {
+                grid-gap: 2rem;
+            }
+        }
+    }
+    @include responsive(650px) {
+        background-color: var(--green-light);
+        padding: 5rem 0;
+        .container {
+            background-color: none;
+            box-shadow: none;
+            padding: 0 1.5rem;
+            .cards {
+                grid-template-columns: repeat(1, 1fr);
+                .card {
+                    max-width: 100%;
+                    .image {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.s-depoimentos {
+    background-color: var(--bege);
+    padding-top: 5.4rem;
+    padding-bottom: 8rem;
+    .container {
+        h2 {
+            text-align: center;
+            color: var(--green-musgo);
+            margin-bottom: 4rem;
+        }
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .image {
+                        @include flex(row, center, center);
+                        margin-bottom: -3.6rem;
+                    }
+                    .info {
+                        padding: 4.9rem 4rem 2.8rem 4rem;
+                        background-color: #ffffff;
+                        border-radius: 16px;
+                        p {
+                            width: 100%;
+                            max-width: 32rem;
+                            margin: 0 auto;
+                            text-align: center;
+                            font-size: 1.6rem;
+                        }
+                        strong {
+                            display: block;
+                            margin-top: 2.8rem;
+                            text-align: center;
+
+                            font-weight: 700;
+                            font-size: 1.5rem;
+                            line-height: 22px;
+                            text-align: center;
+                            color: var(--green-dark-100);
+                        }
+                    }
+                }
+            }
+            .swiper-pagination {
+                position: relative;
+                margin-top: 3rem;
+                .swiper-pagination-bullet {
+                    width: 4rem;
+                    height: 0.4rem;
+                    background-color: #ffffff;
+                    border-radius: 5px;
+                    opacity: 1;
+                    &-active {
+                        background-color: var(--green-musgo);
+                        border-radius: none;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(550px) {
+        padding: 5rem 0;
+        .container {
+            padding: 0;
+            padding-left: 1.5rem;
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        &:nth-child(3) {
+                            margin-right: 15px;
+                        }
+                        width: 100%;
+                        .info {
+                            padding: 4.9rem 2rem 2.8rem 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

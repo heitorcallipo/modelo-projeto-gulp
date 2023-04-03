@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-size: 1.4rem;
+    font-family: 'Philosopher', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    strong {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: url('../assets/bg-secoes.png') no-repeat center center;
+    background-size: cover;
+}
+
+button {
+    background: transparent;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

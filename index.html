@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VittaSpa</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/plugins.css">
+</head>
+<body>
+    <header id="js-header">
+        <div class="container">
+            <a href="./" class="logo">
+                <img src="./assets/logo_header.png" alt="Logo VittaSpaDay">
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./quem-somos.html">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="./servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="./cartao-presente.html">Cartão presente</a>
+                    </li>
+                    <li>
+                        <a href="#conteudos">Contéudos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=558496401222&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio!" class="btn-wp">
+                    <span>Agende um horário</span>
+                    <img src="./assets/ico-whatsapp.svg" alt="ícone do whatsapp">
+                </a>
+                <button class="hamburger hamburger--collapse" id="js-btn-menu-mobile" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <div class="menu-mobile">
+                <aside>
+                    <nav>
+                        <ul class="js-link">
+                            <li>
+                                <a href="./quem-somos.html">Quem somos</a>
+                            </li>
+                            <li>
+                                <a href="./servicos.html">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="./cartao-presente.html">Cartão presente</a>
+                            </li>
+                            <li>
+                                <a href="#">Contéudos</a>
+                            </li>
+                            <a href="#" class="btn-wp">
+                                <span>Agende um horário</span>
+                                <img src="./assets/ico-whatsapp.svg" alt="ícone do whatsapp">
+                            </a>
+                        </ul>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+    </header>
+
+    <section class="s-hero">
+        <div class="container">
+            <div class="swiper banners">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="left">
+                            <h1>Permita-se!</h1>
+                            <p>Você merece um momento assim, conheça nossas opções de  massoterapia e massagens terapêuticas</p>
+                            <a href="https://api.whatsapp.com/send?phone=558496401222&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio!" class="btn-wp">
+                                <span>Agendar horário</span>
+                                <img src="./assets/ico-whatsapp.svg" alt="ícone do whatsapp">
+                            </a>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="right">
+                            <img src="./assets/img-permita-se.png" alt="Imagem do espaço VittaSpa">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="left">
+                            <h1>Experiências relaxantes</h1>
+                            <p>O melhor presente que você pode dar a alguém é o cuidado com sua saúde e bem-estar.</p>
+                            <a href="./cartao-presente.html" class="btn-wp">
+                                <span>Presentear alguém</span>
+                            </a>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="right">
+                            <img src="./assets/img-experiencia.png" alt="Imagem do espaço VittaSpa">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="left">
+                            <h1>Beleza e bem-estar em um só lugar</h1>
+                            <p>Conheça nossos serviços de beleza e tratamentos de spa para proporcionar a você um momento de descanso e renovação</p>
+                            <a href="./servicos.html" class="btn-wp">
+                                <span>Ver serviços </span>
+                                <img src="./assets/ico-whatsapp.svg" alt="ícone do whatsapp">
+                            </a>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="right">
+                            <img src="./assets/img-beleza.png" alt="Imagem do espaço VittaSpa">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-progress-bar js-progress">
+                    <span class="slide-progress-bar"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-mais-leveza-dia">
+        <div class="container">
+            <h2>Mais leveza para o seu dia a dia</h2>
+            <p>Conheça nossos serviços</p>
+            <div class="all-services" data-aos="fade-up">
+                <div class="service">
+                    <div class="img">
+                        <img src="./assets/ico-massoterapia.png" alt="ícone Massoterapia">
+                    </div>
+                    <h3>Massoterapia</h3>
+                    <p>É uma ótima opção
+                        para aliviar dores musculares, reduzir o estresse e promover um relaxamento profundo.</p>
+                    <a href="./servicos.html" class="btn">Saiba mais</a>
+                </div>
+                <div class="service">
+                    <div class="img">
+                        <img src="./assets/ico-experiencias-relaxantes.png" alt="ícone Experiência relaxantes">
+                    </div>
+                    <h3>Experiências relaxantes</h3>
+                    <p>Uma combinação
+                        de serviços de spa e
+                        beleza que tem o objetivo de relaxamento. São excelentes opções para presentear alguém.</p>
+                    <a href="./servicos.html" class="btn">Saiba mais</a>
+                </div>
+                <div class="service">
+                    <div class="img">
+                        <img src="./assets/ico-salao-de-beleza.png" alt="ícone salão de beleza">
+                    </div>
+                    <h3>Salão de beleza</h3>
+                    <p>Com os nossos serviços
+                        de beleza você tem a experiência completa de cuidados pessoais e
+                        bem-estar.</p>
+                    <a href="./servicos.html" class="btn">Saiba mais</a>
+                </div>
+                <div class="service">
+                    <div class="img">
+                        <img src="./assets/ico-serviços-capilares.png" alt="">
+                    </div>
+                    <h3>Serviços capilares</h3>
+                    <p>Nossos serviços capilares são projetados para fornecer cuidados especiais para os seus cabelos, proporcionando uma experiência personalizada</p>
+                    <a href="./servicos.html" class="btn">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-experiencia-completa">
+        <div class="container">
+            <div class="informacoes" data-aos="fade-right">
+                <h2>Experiência completa de bem-estar, saúde e beleza</h2>
+                <p>O Vitta Spa Day se dedica a melhorar a qualidade de vida dos clientes, oferecendo serviços de spa relaxante, terapia holística, massoterapia, limpeza facial e salão de beleza, bem como ambientes e atendimento de alta qualidade, com o objetivo de promover o equilíbrio entre o corpo e a mente.</p>
+                <a href="./quem-somos.html" class="btn-wp">
+                    <span>Conheça mais sobre nós</span>
+                </a>
+            </div>
+            <div class="images" data-aos="fade-up">
+                <img src="./assets/images-quem-somos.png" alt="Imagem do espaço VittaSpa">
+            </div>
+        </div>
+    </section>
+
+    <section class="s-veja-como-e-facil">
+        <div class="container">
+            <div class="image" data-aos="fade-right">
+                <img src="./assets/image-facil-presentear.png" alt="Imagem de uma mulher segurando uma ficha da vittaspa">
+            </div>
+            <div class="informacoes" data-aos="fade-up">
+                <h2>Veja como é fácil presentear</h2>
+                <ul>
+                    <li>
+                        <span>1</span>
+                        <p>Escolha a experiência que você quer oferecer para a pessoa especial.</p>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <p>Realize o pagamento e informe o nome da pessoa especial que será presenteada.</p>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <p>Agora, é só você escrever uma linda mensagem e enviar o cartão presente para ela! Você pode pegar o cartão presente de forma física em nosso Spa ou a versão digital.</p>
+                    </li>
+                </ul>
+                <a href="./cartao-presente.html" class="btn-wp"><span>Quero presentear </span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-experiencia-inesquecivel">
+        <div class="container">
+            <div class="left" data-aos="fade-right">
+                <h2>Uma experiência inesquecível</h2>
+                <p>
+                    Com a possibilidade de escolher entre uma variedade de serviços, desde massagens e tratamentos corporais a tratamentos faciais e de beleza, o cartão presente é perfeito para presentear quem precisa de um momento de relaxamento e cuidado pessoal.
+
+                    <strong>Proporcione essa experiência inesquecível a alguém especial!</strong>
+                </p>
+                <a href="./cartao-presente.html" class="btn-wp"><span>Presentear alguém</span></a>
+            </div>
+            <div class="right" data-aos="fade-left">
+                <img src="./assets/image-cartao-presente.png" alt="Cartão presente">
+            </div>
+        </div>
+    </section>
+    
+    <section class="s-mais-cuidado">
+        <div class="container">
+            <div class="left-image" data-aos="fade-up">
+                <img src="./assets/image-woman-cuidado.png" alt="Imagem de uma mulher no celular sorrindo">
+            </div>
+            <div class="right" data-aos="fade-right">
+                <h2>Mais cuidado, saúde e relaxamento</h2>
+                <p>Conheça nossos serviços e garanta momentos perfeitos para entrar em sintonia com seu corpo e sua mente!</p>
+                <a href="https://api.whatsapp.com/send?phone=558496401222&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio!" class="btn-wp">
+                    <span>Agendar uma sessão</span>
+                    <img src="./assets/ico-whatsapp.svg" alt="ícone do whatsapp">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-faq">
+        <div class="container">
+            <h2>Perguntas frequentes</h2>
+            <div class="s-accordion">
+                <div class="accordion">
+                    <div class="title js-accordion">
+                        <h3>Quais serviços vocês oferecem?</h3>
+                        <span></span>
+                    </div>
+                    <p>Trabalhamos com serviços de spa relaxante, massoterapia, terapia holística, drenagem linfática, limpeza de pele e salão de beleza. </p>
+                </div>
+                <div class="accordion">
+                    <div class="title js-accordion">
+                        <h3>Quais as formas  de entrega do cartão presente?</h3>
+                        <span></span>
+                    </div>
+                    <p>Você pode optar por um cartão presente digital ou físico com inclusão da caixinha de presente. O cliente pode retirar no Vitta Spa localizado no bairro de Tirol em Natal/RN ou solicitar entrega, o valor do frete varia de acordo com o bairro.</p>
+                </div>
+                <div class="accordion">
+                    <div class="title js-accordion">
+                        <h3>Quais as formas de pagamento?</h3>
+                        <span></span>
+                    </div>
+                    <p> Cartão de crédito direto no <a href="#">site</a>;<br>
+                        Link para pagamentos a distância com opção de parcelamento sem juros; <br>
+                        Pix (cnpj: 08998146000180). 
+                    </p>
+                </div>
+                <div class="accordion">
+                    <div class="title js-accordion">
+                        <h3>Como funciona o Cartão Presente? </h3>
+                        <span></span>
+                    </div>
+                    <p>Qualquer serviço do Vitta pode ser oferecido através do nosso C. Presente. Temos uma embalagem, dentro dela vai o Cartão Presente, nele preenchemos o nome de quem está presenteando, da pessoa que será presenteada e colocamos os serviços que escolheu para surpreender e presentear. Após receber o Cartão Presente basta entrar em contato e agendar o melhor dia para usufruir do mimo.</p>
+                </div>
+                <div class="accordion">
+                    <div class="title js-accordion">
+                        <h3>Qual horário de funcionamento? </h3>
+                        <span></span>
+                    </div>
+                    <p>Ter - Sex:<br>
+                        09:00- 19:00<br>
+                        <br><br>
+                        Sáb
+                        09:00 - 16:00</p>
+                </div>
+                <div class="accordion">
+                    <div class="title js-accordion">
+                        <h3>Onde está localizado o Vitta? </h3>
+                        <span></span>
+                    </div>
+                    <p>Estamos no Bairro de Tirol em Natal/RN.<br>
+                        O acesso é pela rua Afonso Pena, entra na lateral do Mercado Prime. 
+                        Caso venha pela Hermes da Fonseca, passa pelo 16 Batalhão, mais à frente terá um sinal que permite entrar à esquerda (na esquina tem uma Drogaria Bezerra na rua Alberto Maranhão), ao entrar na rua dobra a primeira à direita (esquina: Athenas Turismo) após,  dobra novamente primeira à direita na rua do Vitta. É uma casa verde com toldo branco!</p>
+                </div>
+                <div class="accordion">
+                    <div class="title js-accordion">
+                        <h3>O cartão presente tem validade? </h3>
+                        <span></span>
+                    </div>
+                    <p>Sim, 90 dias para usar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-instagram" id="conteudos">
+        <div class="container">
+            <h2>Acompanhe nossas novidades</h2>
+
+            <a href="https://www.instagram.com/vittaspaday/?hl=en" class="btn-wp"><span>Ver mais novidades</span></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="top">
+                <a href="#" class="logo">
+                    <img src="./assets/logo.png" alt="Logo VittaSpa">
+                </a>
+                <div class="columns">
+                    
+                    <div class="column">
+                        <h3>Vitta Spa Day</h3>
+                        <ul>
+                            <li>
+                                <img src="./assets/ico-gps.svg" alt="Ícone de GPS">
+                                <a href="https://goo.gl/maps/qiaQ6JeU3NW6qoQT7" target="_blank">Rua Dr. João Chaves, nº 977 Tirol | Natal/RN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="column">
+                        <h3>A empresa</h3>
+                        <ul>
+                            <li>
+                                <a href="./quem-somos.html">Sobre </a>
+                            </li>
+                            <li>
+                                <a href="./servicos.html">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="./cartao-presente.html">Cartão Presente</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Horários de funcionamento</h3>
+                        <ul>
+                            <li>
+                                <a>Ter - Sex
+                                    09h- 19h</a>
+                            </li>
+                            <li>
+                                <a>Sáb
+                                    09h - 16h</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Conteúdos</h3>
+                        <ul>
+                            <li>
+                                <a>Novidades</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="column">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li>
+                                <img src="./assets/ico-email.svg" alt="Ícone de E-mail">
+                                <a href="mailto:vittaspaday@hotmail.com">vittaspaday@hotmail.com</a>
+                            </li>
+                            <li>
+                                <img src="./assets/ico-whatsapp (1).svg" alt="Ícone de E-mail">
+                                <a href="https://api.whatsapp.com/send?phone=558496401222&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio!" target="_blank">(84) 99640.1222</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="#">Política de privacidade</a>
+                <p>© 2023 Vitta Spa Day | todos os direitos reservados | Desenvolvido por <a href="https://colinatech.com.br/">Colina Tech</a></p>
+                <div class="redes-sociais">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/vittaspaday/?hl=en">
+                                <img src="./assets/ico-instagram.svg" alt="ícone instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/VittaSpaDay">
+                                <img src="./assets/ico-facebook.svg" alt="ícone facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/plugins.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+</html>

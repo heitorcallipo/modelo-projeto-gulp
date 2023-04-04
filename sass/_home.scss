@@ -21,13 +21,15 @@
 
 .s-especializada-em-solucoes {
   padding: 5rem 0;
-  background-image: url();
+  background-color: var(--black);
   z-index: 4;
   position: relative;
   .container {
-    @include flex(row, center, space-between);
-    gap: 3.6rem;
-    position: relative;
+    h2 {
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 

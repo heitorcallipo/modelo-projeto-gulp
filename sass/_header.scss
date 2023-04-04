@@ -10,7 +10,7 @@ header {
     z-index: 9999;
     transition: all .4s ease;
     &.fixed-menu {
-        background-color: #ffffff;
+        background-color: var(--black);
         padding: 0;
         height: 8rem;
     }

@@ -18,7 +18,8 @@ header {
         @include flex(row, center, space-between);
         .logo {
             img {
-                height: 6.8rem;
+                height: 50;
+                width: 265px;
             }
         }
         nav {
@@ -33,7 +34,7 @@ header {
                         font-weight: 700;
                         font-size: 16px;
                         line-height: 22px;
-                        color: var(--green-dark);
+                        color: var(--white);
                         transition: all .4s ease;
                         &:hover {
                             color: var(--green-dark-100);

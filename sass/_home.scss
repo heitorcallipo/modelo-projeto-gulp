@@ -4,15 +4,17 @@
   background: url("../assets/images/Rectangle\ 2.png") no-repeat center center;
   z-index: 1;
   color: var(--white);
-  &::before {
-    content: "";
-    width: 41.3rem;
-    height: 50rem;
-    position: absolute;
-    left: -28.4rem;
-    top: 7.4rem;
+  .btn {
+    background: var(--degrade);
+    color: var(--black);
+    width: 255.7px;
+    height: 48px;
+    border-radius: 0.5em;
+    font-weight: 700;
+    margin-top: 2em;
   }
   .container {
+    margin-top: 20em;
     position: relative;
     z-index: 4;
     text-align: center;
@@ -26,6 +28,7 @@
   position: relative;
   .container {
     display: flex;
+    flex-direction: column;
 
     h2 {
       color: var(--white);
